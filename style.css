@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+    width: 470px;
+    height: 680px;
+    background-color: rgba(255, 255, 255, 0.34);
+    margin: 150px auto;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.display {
+    color: black;
+    font-size: 60px;
+    text-align: end;
+    padding: 20px 10px;
+    overflow: hidden; /* Скрываем текст, который выходит за пределы */
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+    text-overflow: ellipsis; /* Добавляем многоточие, если текст не помещается */
+    max-width: 100%; /* Ограничиваем ширину дисплея */
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    border: none;
+    color: grey;
+    border-radius: 50px;
+    padding: 28px 30px;
+    width: 22%;
+    margin: 10px 6px;
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.372);
+}
+
+.button:hover {
+    background-color: white;
+    box-shadow: white 0px 2px 4px 0px,
+                #5bb9fc 0px 2px 16px 0px;
+}
+
+.zero {
+    background-color: #cdb5e5;
+    width: 72%;
+}
+
+.delete {
+    width: 46%;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-pink {
+    background-color: #fcc7e4;
+}
+
+.btn-blue {
+    background-color: #c7e6fc;
+}
+
+.btn-green {
+    background-color: #c5ffab;
+}
+
+.btn-purple {
+    background-color: #cdb5e5;
+}
