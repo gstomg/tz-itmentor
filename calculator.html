@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Калькулятор</title>
-</head>
-<body>
-    <div class="calculator">
-        <div class="display" id="display">0</div>
-        <div class="buttons">
-            <button onclick="clearDisplay()" class="button AC btn-white delete">AC</button>
-            <button onclick="appendDecimal()" class="button btn-white">.</button>
-            <button onclick="appendOperator('/')" class="button btn-white">/</button>
-            <button onclick="appendNumber('7')" class="button btn-pink">7</button>
-            <button onclick="appendNumber('8')" class="button btn-pink">8</button>
-            <button onclick="appendNumber('9')" class="button btn-pink">9</button>
-            <button onclick="appendOperator('x')" class="button btn-pink">x</button>
-            <button onclick="appendNumber('4')" class="button btn-blue">4</button>
-            <button onclick="appendNumber('5')" class="button btn-blue">5</button>
-            <button onclick="appendNumber('6')" class="button btn-blue">6</button>
-            <button onclick="appendOperator('-')" class="button btn-blue">-</button>
-            <button onclick="appendNumber('1')" class="button btn-green">1</button>
-            <button onclick="appendNumber('2')" class="button btn-green">2</button>
-            <button onclick="appendNumber('3')" class="button btn-green">3</button>
-            <button onclick="appendOperator('+')" class="button btn-green">+</button>
-            <button onclick="appendNumber('0')" class="button zero">0</button>
-            <button onclick="calculate()" class="button btn-purple">=</button>
+    <head>
+        <meta charset="UTF-8">  
+        <link rel="stylesheet" href="./style.css" >
+        <title>Калькулятор</title>      
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="button AC btn-white delete">AC</button>
+                <button onclick="appendDecimal()" class="button btn-white">.</button>
+                <button onclick="appendOperator('/')" class="button btn-white">/</button>
+                <!--onclick- атрибут реагирующий на клик мыши, функция appendOperator('+')
+                которая выполнится при клике, + аргумент передаваемый в функцию
+                -->
+                <button onclick="appendNumber('7')" class="button btn-pink">7</button>
+                <button onclick="appendNumber('8')" class="button btn-pink">8</button>
+                <button onclick="appendNumber('9')" class="button btn-pink">9</button>
+                <button onclick="appendOperator('x')" class="button btn-pink">x</button>
+                <button onclick="appendNumber('4')" class="button btn-blue">4</button>
+                <button onclick="appendNumber('5')" class="button btn-blue">5</button>
+                <button onclick="appendNumber('6')" class="button btn-blue">6</button>
+                <button onclick="appendOperator('-')" class="button btn-blue">-</button>
+                <button onclick="appendNumber('1')" class="button btn-green">1</button>
+                <button onclick="appendNumber('2')" class="button btn-green">2 </button>
+                <button onclick="appendNumber('3')" class="button btn-green">3</button>
+                <button onclick="appendOperator('+')" class="button btn-green">+</button>
+                <button onclick="appendNumber('0')" class="button zero">0</button>
+                <button onclick="calculate()" class="button btn-purple">=</button>
+                <!--при нажатии срабатывает функция вычисления-->
+             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
