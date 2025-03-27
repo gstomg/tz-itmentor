@@ -14,7 +14,7 @@ body {
     width: 470px;
     height: 680px;
     background-color: rgba(255, 255, 255, 0.34);
-    margin: 150px auto;
+    margin: 50px auto;
     border-radius: 40px;
     padding: 10px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -26,10 +26,10 @@ body {
     font-size: 60px;
     text-align: end;
     padding: 20px 10px;
-    overflow: hidden; /* Скрываем текст, который выходит за пределы */
-    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
-    text-overflow: ellipsis; /* Добавляем многоточие, если текст не помещается */
-    max-width: 100%; /* Ограничиваем ширину дисплея */
+    overflow: hidden; /* скрывает выходящий за пределы текст */
+    white-space: nowrap; /*запрещает переносить текста на новую строку */
+    text-overflow: ellipsis; /* многоточие, если текст не помещается в блоке*/
+    max-width: 100%; 
 }
 
 .buttons {
